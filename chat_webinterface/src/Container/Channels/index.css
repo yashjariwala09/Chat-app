@@ -1,0 +1,30 @@
+.Channel-header {
+  display: flex;
+  align-items: center;
+  padding: 2px 10px;
+  font-weight: 700;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.toggle-header {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.toggle-header:hover {
+  cursor: pointer;
+}
+img {
+  width: 25px;
+  height: 25px;
+}
+
+.img-wrapper {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.message-list-collapse {
+  overflow-x: hidden;
+}

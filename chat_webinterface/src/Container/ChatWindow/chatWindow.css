@@ -1,0 +1,12 @@
+.chat-window-wrapper {
+    width:100%;
+    position:relative;
+}
+
+.chat-window-input {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+}
+
+

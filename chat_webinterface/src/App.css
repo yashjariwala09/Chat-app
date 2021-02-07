@@ -1,0 +1,80 @@
+@font-face {
+  font-family: Raleway;
+  src: url(./Fonts/static/Raleway-Regular.ttf);
+}
+
+* {
+  font-family:Raleway !important;
+}
+.App {
+  background-color: #222429;
+}
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+
+.Nav-area {
+  min-height: 100vh;
+  width: 333px;
+  background: #0F0F13;
+  position: relative;
+}
+
+
+.Nav-Header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.Menu-Button:hover {
+  cursor: pointer;
+}
+
+.hide-show-button {
+    position: absolute;
+    right: -20px;
+    border-radius: 45px;
+    background: #6e6eb9;
+    transform: rotate(180deg);
+}
+
+.hide-show-button:hover {
+  cursor: pointer;
+}
+

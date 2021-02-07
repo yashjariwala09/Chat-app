@@ -1,0 +1,81 @@
+.chat-input-wrapper {
+  margin: 0 auto;
+  background: #2e3034;
+  margin: 0px 25px;
+  border-radius: 10px;
+  color: #9e9e9e;
+  padding: 10px;
+}
+
+.chat-text-area {
+  /* margin-top: 10px; */
+  max-height: 150px;
+  overflow: auto;
+}
+
+.chat-text-area:focus {
+  outline: none;
+}
+
+.format-wrapper {
+  display: flex;
+  /* padding: 0 5px 5px 5px; */
+}
+
+.format-button {
+  padding: 2px;
+}
+
+.format-button:hover {
+  cursor: pointer;
+}
+
+.chat-text-area::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+/* Track */
+
+.chat-text-area::-webkit-scrollbar-track {
+  background: #2e3034;
+  border-radius: 10px;
+}
+
+/* Handle */
+
+.chat-text-area::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+
+.chat-text-area::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.emoji-mart-scroll::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+/* Track */
+
+.emoji-mart-scroll::-webkit-scrollbar-track {
+  background: #222222;
+  border-radius: 10px;
+}
+
+/* Handle */
+
+.emoji-mart-scroll::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+
+.emoji-mart-scroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
