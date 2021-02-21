@@ -20,6 +20,7 @@ const ButtonWrapper = styled.button`
   padding: 0px;
   border: 0;
   border-radius: 5px;
+  margin-left: ${props=>props.marginLeft?props.marginLeft:0}px
 `;
 
 class ChatInput extends Component {
@@ -136,7 +137,7 @@ class ChatInput extends Component {
         </div>
         <div className="format-wrapper">
           <div>
-            {inlineStyle.map((type) => {
+            {inlineStyle.map((type,index) => {
               return (
                 <ButtonWrapper
                   onMouseDown={(e) => this._toggleInlineStyle(e, type.lable)}
@@ -145,6 +146,7 @@ class ChatInput extends Component {
                       ? "aliceblue"
                       : "transparent",
                   }}
+                  marginLeft={index === 0 ? 0 : 5}
                   key={type.lable}
                 >
                   {type.component}

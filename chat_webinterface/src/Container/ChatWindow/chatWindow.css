@@ -1,12 +1,55 @@
 .chat-window-wrapper {
-    width:100%;
-    position:relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .chat-window-input {
-    position: absolute;
-    bottom: 15px;
-    width: 100%;
+  margin: 15px 0;
 }
 
+.chat-window-messages {
+  overflow: auto;
+  flex-grow: 1;
+}
 
+.info-wrapper {
+  height: 80px;
+  color: white;
+  border-bottom: 1px solid #2e3034;
+  display: flex;
+  align-items: center;
+}
+
+.info-text {
+  margin: 0 30px;
+  width: 100%;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.chat-window-messages::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+/* Track */
+.chat-window-messages::-webkit-scrollbar-track {
+  background: #2e3034;
+  border-radius: 10px;
+}
+
+/* Handle */
+
+.chat-window-messages::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+
+.chat-window-messages::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

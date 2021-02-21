@@ -1,0 +1,11 @@
+.messsage-username {
+  color: #a8abac;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
