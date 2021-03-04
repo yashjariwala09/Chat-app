@@ -1,21 +1,24 @@
 const userResolvers = {
   Query: {
-    async userById(root, { id }) {return id},
-    async allUser(root) {return "all"},
+    async userById(root, { id }) {
+      return id;
+    },
+    async allUser(root) {
+      return "all";
+    },
   },
   Mutation: {
-    async createUser(root, { firstName, lastName, email, role }, { models }) {
-      return models.User.create({
+    async createUser( root, {firstName, lastName, email, password, role}, {services: { UserService }}) {
+      const user = await UserService.createUser({
         firstName,
         lastName,
         email,
+        password,
         role,
-      }).then((user) => {
-        return user;
       });
+      return user;
     },
   },
 };
-
 
 module.exports = userResolvers;
