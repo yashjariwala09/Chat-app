@@ -30,12 +30,12 @@ const messages = [
     image: userAvatar1,
     isEdited: true,
   },
-//   {
-//     name: "Tiren",
-//     text: "Hi There",
-//     image: userAvatar2,
-//     isEdited: false,
-//   },
+  {
+    name: "Tiren",
+    text: "Hi There",
+    image: userAvatar2,
+    isEdited: false,
+  },
 //   {
 //     name: "Yash",
 //     text:

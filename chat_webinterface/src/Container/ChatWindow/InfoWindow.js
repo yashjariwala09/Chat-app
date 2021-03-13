@@ -12,6 +12,7 @@ class InfoWindow extends Component {
           <img
             src={userAvatar2}
             style={{ width: "50px", height: "50px", borderRadius: "5px" }}
+            alt="error"
           />
           <div style={{ marginLeft: "10px" }}>
             Tiren

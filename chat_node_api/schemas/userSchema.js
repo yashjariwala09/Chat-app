@@ -8,9 +8,16 @@ type User {
     email: String!
     role: Int!
 }
+
+type LoginUser {
+    email: String!
+    message: String!
+}
+
 type Query {
     userById( id: ID! ): User!
     allUser: [User!]!
+    login( email: String!, password: String! ): LoginUser!
 }
 
 type Mutation {

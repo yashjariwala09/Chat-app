@@ -1,14 +1,17 @@
-import './App.css';
-import ChatNav from "./Container/ChatNav/ChatNavigationBar"
-import ChatWindow from "./Container/ChatWindow/ChatWindow";
+import "./App.css";
+import ChatScreen from "./Container/ChatScreen";
+import Login from "./Container/LoginPage";
+import { Route, Switch, withRouter } from "react-router-dom";
 
 function App() {
   return (
-    <div className={"App"} style={{display:"flex"}}>
-      <ChatNav />
-      <ChatWindow/>
+    <div className={"App"} style={{ display: "flex" }}>
+      <Switch>
+        <Route component={Login} />
+        <Route path={"/chat"} component={ChatScreen} />
+      </Switch>
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);
